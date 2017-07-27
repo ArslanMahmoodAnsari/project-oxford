@@ -1,0 +1,22 @@
+<center><h1>Add Face to A Face list</h1></center>
+<form method="POST" ng-submit="addFace()">
+	<div class="row col-md-offset-2">
+		<div class="form-group col-md-6">
+			<label for="">face List Id:</label>
+			<input type="text"  class="form-control" name="faceListId" ng-model="faceListId">
+		</div>
+	</div>
+	<div class="row col-md-offset-2">
+		<div class="form-group col-md-6">
+			<label for="">name:</label>
+			<input type="text"  class="form-control" name="name" ng-model="name">
+		</div>
+	</div>
+	<div class="row col-md-offset-2">
+		<div class="form-group col-md-6">
+			<label for="">link:</label>
+			<input type="text" class="form-control" name="link" ng-model="link">
+		</div>	
+	</div>
+	<button type="submit" class="btn btn-primary row col-md-offset-6">Add face</button>
+</form>

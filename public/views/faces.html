@@ -1,0 +1,25 @@
+
+<h2 class = "sub-header"> faces </h2>
+<div class="table-responsive" ng-init="getFaces()">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+      <th>#</th> 
+        <th>persisted Face Id </th>
+        <th>face List ID</th>
+        <th>Name</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="face in faces">
+        <td>{{face._id}}</td>
+        <td>{{face.face_id}}
+        <td>{{face.face_list_id}}</td>
+        <td>{{face.name}}</td>
+        <td><a href="#/face/edit/{{face._id}}" class = "btn btn-default">Edit</a>
+        <button id ="deleteFace" ng-click="deleteFace(face._id)" class = "btn btn-danger">Delete</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
